@@ -140,7 +140,7 @@ const finish = () => {
 *Endereço de Entrega*
   *Cep:* ${info.endereco.cep}
   *Rua:* ${info.endereco.rua}
-  *Némero:* ${info.endereco.numero}
+  *Número:* ${info.endereco.numero}
   *Complemento:* ${info.endereco.complemento != '' ? info.endereco.complemento : 'nenhum'}
   *Bairro:* ${info.endereco.bairro}
   *Cidade:* ${info.endereco.cidade}
@@ -154,8 +154,6 @@ ${listaProdutos}
 
   const telefone = '5511949335503'
   const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`
-
-  carrinho.removerTodos()
 
   window.open(url, '_blank')
 }
