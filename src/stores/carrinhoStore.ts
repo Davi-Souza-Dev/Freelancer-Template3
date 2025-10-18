@@ -11,7 +11,7 @@ const useCarrinhoStore = defineStore('carrinho', {
     getTotal: (state) => {
       let total = 0
       state.produtos.map((produto) => {
-        total += produto.price * produto.quant
+        total += produto.price
       })
       return total
     },

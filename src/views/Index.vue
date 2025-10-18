@@ -16,10 +16,9 @@ const carrinhoStore = useCarrinhoStore()
 const fundoPopUp = ref('b1')
 const showPopUp = ref(false)
 
-
 const categorias = ref<Categoria[]>([])
 const produtos = ref<Produto[]>([])
-const produto = ref<Produto | undefined>({
+const produto = ref<Produto>({
   id: 0,
   idCategoria: 0,
   title: '',
@@ -57,11 +56,10 @@ const selectCat = async (idCat: number) => {
 
 const clickProduct = (idProduto: number, fundo: string) => {
   showPopUp.value = true
-  // if (carrinhoStore.findProduto(idProduto) != undefined) {
-  //   produto.value = carrinhoStore.findProduto(idProduto)
-  // } else {
-    produto.value = produtos.value.find((produto: Produto) => produto.id == idProduto)
-  // }
+  const produtoEncontrado = produtos.value.find((p) => p.id === Number(idProduto))
+  if (produtoEncontrado) {
+    produto.value = produtoEncontrado
+  }
   fundoPopUp.value = fundo
 }
 
@@ -80,6 +78,7 @@ const toggleSearching = () => {
 
 const inputSearching = async () => {
   try {
+    staySearching()
     const response = await axios.get('/db.json')
     const search = searchProduto.value.toLowerCase().trim()
     produtos.value = response.data.produtos.filter((p: Produto) =>
@@ -87,6 +86,12 @@ const inputSearching = async () => {
     )
   } catch (error) {
     console.error(error)
+  }
+}
+
+const staySearching = () => {
+  if (searchProduto.value == '') {
+    searching.value = false
   }
 }
 </script>

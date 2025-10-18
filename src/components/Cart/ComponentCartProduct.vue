@@ -15,7 +15,8 @@ const props = defineProps<Props>()
 
 const productQuant = ref(props.produto.quant)
 const unitPrice = ref(props.produto.price / productQuant.value)
-const totalPrice = ref(unitPrice.value)
+const totalPrice = ref(props.produto.price)
+
 // ADICIONAR E REMOVER QUANTIA
 const addQuant = () => {
   if (productQuant.value < 100) {
@@ -28,6 +29,7 @@ const addQuant = () => {
 const removeQuant = () => {
   if (productQuant.value > 1) {
     productQuant.value = productQuant.value - 1
+    totalPrice.value = 0;
     totalPrice.value = unitPrice.value * productQuant.value
     updateProduto()
   }

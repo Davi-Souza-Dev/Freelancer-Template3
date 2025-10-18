@@ -140,6 +140,7 @@ const finish = () => {
 *Endereço de Entrega*
   *Cep:* ${info.endereco.cep}
   *Rua:* ${info.endereco.rua}
+  *Némero:* ${info.endereco.numero}
   *Complemento:* ${info.endereco.complemento != '' ? info.endereco.complemento : 'nenhum'}
   *Bairro:* ${info.endereco.bairro}
   *Cidade:* ${info.endereco.cidade}
