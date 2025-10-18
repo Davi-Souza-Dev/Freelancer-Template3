@@ -3,6 +3,6 @@ version: "3.8"
 services:
   app:
     build: .
-    container_name: template2
+    container_name: template3
     ports:
-      - "8082:8080"
+      - "8083:8080"
