@@ -1,0 +1,17 @@
+@import './base.css';
+
+*{
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#app,body,html {
+  width: 100%;
+  background:#FAFAFA ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
+}

@@ -1,0 +1,33 @@
+{
+  "categorias": [
+    { "id": 1, "nome": "Bolos" },
+    { "id": 2, "nome": "Brigadeiros" },
+    { "id": 3, "nome": "Milkshakes" },
+    { "id": 4, "nome": "Outros" }
+  ],
+  "produtos": [
+    { "id": 101, "idCategoria": 1, "title": "Bolo de Chocolate", "desc": "Massa fofa de chocolate com cobertura cremosa e sabor intenso de cacau.", "price": 45.0, "image": "https://placehold.co/1000x10000/4B2E2E/FFFFFF?text=Bolo+Chocolate", "quant": 1 },
+    { "id": 102, "idCategoria": 1, "title": "Bolo de Morango", "desc": "Recheado com creme leve e pedaços de morango fresco.", "price": 50.0, "image": "https://placehold.co/1000x10000/FF4D6D/FFFFFF?text=Bolo+Morango", "quant": 1 },
+    { "id": 103, "idCategoria": 1, "title": "Bolo Red Velvet", "desc": "Clássico americano com toque de cacau e cobertura de cream cheese.", "price": 65.0, "image": "https://placehold.co/1000x10000/8B0000/FFFFFF?text=Bolo+Red+Velvet", "quant": 1 },
+    { "id": 104, "idCategoria": 1, "title": "Bolo de Cenoura", "desc": "Tradicional com cobertura generosa de chocolate.", "price": 40.0, "image": "https://placehold.co/1000x10000/FF8C00/000000?text=Bolo+Cenoura", "quant": 1 },
+    { "id": 105, "idCategoria": 1, "title": "Bolo Prestígio", "desc": "Combinação perfeita de chocolate e coco fresco.", "price": 55.0, "image": "https://placehold.co/1000x10000/3E3E3E/FFFFFF?text=Bolo+Prestigio", "quant": 1 },
+
+    { "id": 201, "idCategoria": 2, "title": "Brigadeiro Tradicional", "desc": "Clássico brasileiro com sabor intenso de chocolate e granulados.", "price": 3.5, "image": "https://placehold.co/1000x10000/6B4226/FFFFFF?text=Brigadeiro+Tradicional", "quant": 1 },
+    { "id": 202, "idCategoria": 2, "title": "Brigadeiro de Ninho", "desc": "Feito com leite Ninho, doce e cremoso na medida certa.", "price": 4.0, "image": "https://placehold.co/1000x10000/FFFDD0/000000?text=Brigadeiro+Ninho", "quant": 1 },
+    { "id": 203, "idCategoria": 2, "title": "Brigadeiro de Pistache", "desc": "Sabor sofisticado com pistache natural e textura suave.", "price": 5.0, "image": "https://placehold.co/1000x10000/98FB98/000000?text=Brigadeiro+Pistache", "quant": 1 },
+    { "id": 204, "idCategoria": 2, "title": "Brigadeiro de Morango", "desc": "Combinação doce e frutada, perfeita para qualquer ocasião.", "price": 4.5, "image": "https://placehold.co/1000x10000/FF69B4/000000?text=Brigadeiro+Morango", "quant": 1 },
+    { "id": 205, "idCategoria": 2, "title": "Brigadeiro Meio Amargo", "desc": "Ideal para quem prefere um toque menos doce e mais intenso.", "price": 4.5, "image": "https://placehold.co/1000x10000/2F4F4F/FFFFFF?text=Meio+Amargo", "quant": 1 },
+
+    { "id": 301, "idCategoria": 3, "title": "Milkshake de Chocolate", "desc": "Cremoso, gelado e com sabor intenso de chocolate.", "price": 18.0, "image": "https://placehold.co/1000x10000/4B2E2E/FFFFFF?text=Milkshake+Chocolate", "quant": 1 },
+    { "id": 302, "idCategoria": 3, "title": "Milkshake de Morango", "desc": "Feito com morangos frescos e calda artesanal.", "price": 18.0, "image": "https://placehold.co/1000x10000/FF4D6D/FFFFFF?text=Milkshake+Morango", "quant": 1 },
+    { "id": 303, "idCategoria": 3, "title": "Milkshake de Oreo", "desc": "Mistura irresistível de sorvete e pedaços de Oreo.", "price": 20.0, "image": "https://placehold.co/1000x10000/2F2F2F/FFFFFF?text=Milkshake+Oreo", "quant": 1 },
+    { "id": 304, "idCategoria": 3, "title": "Milkshake de Nutella", "desc": "Cremoso e marcante, com Nutella de verdade.", "price": 22.0, "image": "https://placehold.co/1000x10000/6F4E37/FFFFFF?text=Milkshake+Nutella", "quant": 1 },
+    { "id": 305, "idCategoria": 3, "title": "Milkshake de Baunilha", "desc": "Clássico e leve, com essência pura de baunilha.", "price": 17.0, "image": "https://placehold.co/1000x10000/FFFDD0/000000?text=Milkshake+Baunilha", "quant": 1 },
+
+    { "id": 401, "idCategoria": 4, "title": "Cookie de Chocolate", "desc": "Crocante por fora e macio por dentro, cheio de gotas de chocolate.", "price": 6.0, "image": "https://placehold.co/1000x10000/6B4226/FFFFFF?text=Cookie+Chocolate", "quant": 1 },
+    { "id": 402, "idCategoria": 4, "title": "Cupcake de Baunilha", "desc": "Massa leve e fofa com cobertura de chantilly.", "price": 8.0, "image": "https://placehold.co/1000x10000/FFFDD0/000000?text=Cupcake+Baunilha", "quant": 1 },
+    { "id": 403, "idCategoria": 4, "title": "Brownie Tradicional", "desc": "Denso e úmido, com sabor intenso de chocolate.", "price": 9.0, "image": "https://placehold.co/1000x10000/3E2723/FFFFFF?text=Brownie+Tradicional", "quant": 1 },
+    { "id": 404, "idCategoria": 4, "title": "Donut Recheado", "desc": "Cobertura colorida e recheio cremoso irresistível.", "price": 10.0, "image": "https://placehold.co/1000x10000/FF69B4/000000?text=Donut+Recheado", "quant": 1 },
+    { "id": 405, "idCategoria": 4, "title": "Pão de Mel", "desc": "Tradicional e aromático, com recheio de doce de leite.", "price": 7.0, "image": "https://placehold.co/1000x10000/8B4513/FFFFFF?text=Pao+de+Mel", "quant": 1 }
+  ]
+}
