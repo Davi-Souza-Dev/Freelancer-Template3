@@ -73,7 +73,7 @@ const searching = ref(false)
 const searchProduto = ref('')
 const toggleSearching = () => {
   searching.value = !searching.value
-  searchProduto.value = ''
+  searchProduto.value = ' '
 }
 
 const inputSearching = async () => {
@@ -150,11 +150,10 @@ const staySearching = () => {
             clickProduct(produto.id, Math.floor(produto.id / 2) % 2 === 0 ? 'b1' : 'b2')
           "
         />
-
-        <PopUp v-show="showPopUp" @close="closePopUp" :fundo="fundoPopUp" :produto="produto" />
       </div>
     </div>
   </div>
+      <PopUp v-show="showPopUp" @close="closePopUp" :fundo="fundoPopUp" :produto="produto" />
 </template>
 
 <style scoped>
